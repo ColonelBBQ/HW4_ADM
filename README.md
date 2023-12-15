@@ -11,6 +11,6 @@ The Group is composed by the following members:
 
 ## Files in the Repository:
 - `Main.ipynb`: this file contains all the answers to the Research Questions.
-- `CLQ_output.png`: this file contains images required to answer the Command Line Question (CLQ)
+- `output_commandline.png`: this file contains images required to answer the Command Line Question (CLQ)
 - `CommandLine.sh`:  shell script used to answer the first part of the Command Line Question (CLQ)
 - `Algorithm.py`: this file contains the script the answer the Algorithmic Question (AQ)
