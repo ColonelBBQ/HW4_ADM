@@ -20,7 +20,7 @@ awk -F',' '{sum += $3; count++} END {print "The average time between subsequent 
 
 # awk -F',' : Processes each row and splits it by comma
 # '{sum += $3; count++}': Sums up the durations and counts the entries
-# END {print "The average time between subsequent clicks on Netflix.com is:", (count > 0 ? sum / count : 0), "seconds."}: At the end, calculates and prints the average duration
+# END {print "The average time between subsequent clicks on Netflix.com is:", (count > 0 ? sum / count : 0), "seconds."}: calculates the average time between subsequent clicks on Netflix, but it also handle the case with be no data (to avoid division by zero). No records = 0 seconds. then it finds the average by dividing sum/count
 
 #########################################################################################################################################################################################################################################
 
@@ -31,4 +31,4 @@ csvcut -d ',' -c user_id,duration vodclickstream_uk_movies_03.csv | awk -F',' '{
 # Again I used csvcut because there were columns which had commas and I wasn't getting the correct result for each column, delimiter is comma (-d ',') and I only included columns user_id and duration from the csv file
 # awk -F',' : Processes each row and sums durations per user
 # '{users[$1] += $2}': Sums up the duration for each user
-# END { ... }: At the end, finds and prints the user with maximum duration
+# END {{for (user in users) {if (users[user] > max) {max = users[user]; maxUser = user}} print...}: Loop through 'users' array. Find the user (maxUser) with the highest total duration (max) on Netflix and print the result
