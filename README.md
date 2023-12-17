@@ -5,7 +5,7 @@ This is the repository Maintained by Group 25 for the Homework 4 of ADM.
 
 ## Group Members:
 The Group is composed by the following members:
-- Sudenaz (subaysag@gmail.com)
+- Sudenaz Baysağ (subaysag@gmail.com)
 - Dila Aslan (dilaaslan0144@gmail.com)
 - Claudio Giannini (giannini.2093898@studenti.uniroma1.it)
 
