@@ -1,4 +1,4 @@
-"## 5. Algorithmic Question (AQ)\n"
+**## 5. Algorithmic Question (AQ)\n**
 
 def max_score(S, marks):
 memo = {}
@@ -37,4 +37,5 @@ print(max_score(30, [13, 27, 41, 59, 28, 33, 39, 19, 52, 48, 55, 79]))  # Output
 
 ## b) The time complexity is exponential, specifically O(n!), where n is the length of the marks list. This is because, in the worst case, for each element in the list, the function makes a recursive call for all possible subsets of the remaining elements.
 
+## d)  We can create a 2D table to store results of subproblems. And time complexity will be O(n * S), where n is the length of the marks list and S is the current score.
 
